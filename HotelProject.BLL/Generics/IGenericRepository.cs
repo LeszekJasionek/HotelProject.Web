@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject.BLL.Generics
 {
-    public interface IGenericRepository
+    public interface IGenericRepository<T>
     {
         IEnumerable<T> GetAll(
             Expression<Func<T, bool>> filter = null,
